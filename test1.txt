@@ -1,1 +1,16 @@
 Яркин Максим
+
+
+
+double a, b, c;
+   cout << "Введите значение:";
+   cin >> a;
+   cout << "Введите значение:";
+   cin >> b;
+   double* A(&a), * B(&b), * C(&c);
+   *A *= 3;
+   *C = *A;
+   *A = *B;
+   *B = *C;
+   cout << *A << endl;
+   cout << *B;\
